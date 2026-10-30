@@ -1,253 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scrollength — Privacy Policy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Scrollength</title>
 <style>
   :root {
-    --primary: #0D9488;
-    --text: #0F172A;
-    --muted: #64748B;
-    --border: #E2E8F0;
-    --bg: #F4F7F6;
+    --bg: #f4f7f8;
+    --surface: #ffffff;
+    --ink: #0c1a20;
+    --muted: #687a86;
+    --line: #e2e9ec;
+    --teal: #0d9488;
+    --deep: #07342a;
   }
   * { box-sizing: border-box; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: var(--text);
-    background: var(--bg);
-    line-height: 1.65;
     margin: 0;
-    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
   }
-  .container {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 48px 24px 80px;
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+  header { margin-bottom: 40px; }
+  .eyebrow {
+    display: inline-block; background: var(--deep); color: #5bf0b4;
+    font-size: 12px; font-weight: 600; letter-spacing: .04em;
+    padding: 5px 11px; border-radius: 20px; text-decoration: none;
   }
-  h1 { font-size: 2rem; margin-bottom: 4px; }
-  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 32px; }
+  h1 { font-size: 34px; line-height: 1.15; letter-spacing: -.02em; margin: 20px 0 8px; }
   h2 {
-    font-size: 1.25rem;
-    margin-top: 40px;
-    margin-bottom: 8px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid var(--border);
+    font-size: 19px; letter-spacing: -.01em; margin: 40px 0 10px;
+    padding-top: 22px; border-top: 1px solid var(--line);
   }
-  h3 { font-size: 1.05rem; margin-top: 24px; margin-bottom: 4px; }
-  a { color: var(--primary); }
-  .highlight {
-    background: #CCFBF1;
-    border-radius: 12px;
-    padding: 18px 20px;
-    margin: 24px 0;
-    color: #0F766E;
-  }
-  .highlight strong { color: #0F766E; }
+  h3 { font-size: 15px; margin: 22px 0 6px; }
+  p, li { color: #223038; }
+  .lede { font-size: 17px; color: var(--muted); margin: 0; }
+  .meta { font-size: 14px; color: var(--muted); margin-top: 14px; }
   ul { padding-left: 22px; }
-  li { margin-bottom: 6px; }
-  .note {
-    font-size: 0.85rem;
-    color: var(--muted);
-    border-left: 3px solid var(--border);
-    padding-left: 14px;
-    margin: 16px 0;
+  li { margin: 6px 0; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 16px; padding: 20px 22px; margin: 24px 0;
+  }
+  .card h3 { margin-top: 0; }
+  .card p:last-child, .card ul:last-child { margin-bottom: 0; }
+  .fill {
+    background: #ffe57f; border-bottom: 2px solid #f0b400;
+    padding: 1px 6px; border-radius: 3px; font-weight: 600;
+  }
+  a { color: var(--teal); }
+  code {
+    background: #eaf1f2; border-radius: 4px; padding: 1px 5px;
+    font-size: 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   }
   footer {
-    margin-top: 48px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 0.85rem;
+    margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line);
+    font-size: 14px; color: var(--muted);
   }
+  footer a { color: var(--muted); }
 </style>
 </head>
 <body>
-<div class="container">
+<div class="wrap">
 
+<header>
+  <a class="eyebrow" href="./">Scrollength</a>
   <h1>Privacy Policy</h1>
-  <p class="updated">Scrollength &middot; Last updated: 12 August 2026</p>
+  <p class="lede">Scrollength works on your phone. Your screen time and the
+  distances it calculates never leave it, and the developer cannot see them.</p>
+  <p class="meta">Last updated: 30 October 2026</p>
+</header>
 
-  <div class="highlight">
-    <strong>In short:</strong> Scrollength works entirely on your device. We do not run any
-    server, we do not have a database, we do not ask for an account or email, and we never
-    receive or store your usage data. Your information stays with you.
-  </div>
-
-  <p>
-    This Privacy Policy explains how the Scrollength mobile application (the &ldquo;App&rdquo;)
-    handles information. It is written to comply with the EU General Data Protection Regulation
-    (GDPR) and the Serbian Law on Personal Data Protection (&ldquo;Zakon o za&scaron;titi
-    podataka o li&#269;nosti&rdquo;, Official Gazette No. 87/2018).
-  </p>
-
-  <h2>1. Who is responsible</h2>
-  <p>
-    The App is developed and operated by an independent developer based in Serbia
-    (the &ldquo;Developer&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). For any privacy question
-    or request, contact:
-  </p>
+<div class="card">
+  <h3>The short version</h3>
   <ul>
-    <li>Email: <a href="mailto:scrollength.app@gmail.com">scrollength.app@gmail.com</a></li>
+    <li>The app reads how long you spend in eight social apps, and the screen
+      height you enter during setup.</li>
+    <li>Everything is calculated and stored on your device, in the app's own
+      private storage.</li>
+    <li>There is no account, no analytics and no advertising.</li>
+    <li>The only thing the app sends over the network is whether you have
+      bought Pro. See <a href="#network">What goes over the network</a>.</li>
+    <li>Uninstalling the app deletes everything it stored on your phone.</li>
   </ul>
-  <p class="note">
-    [To finalise before launch: insert the registered business name and address once business
-    registration is completed.]
-  </p>
+</div>
 
-  <h2>2. The data the App uses &mdash; and where it stays</h2>
-  <p>
-    To calculate how far you scroll, the App reads certain information <strong>locally on your
-    device</strong>. This information is processed on the device and is <strong>never transmitted
-    to the Developer or to any server we control</strong>:
-  </p>
-  <ul>
-    <li>
-      <strong>App usage time</strong> for a fixed set of social apps (TikTok, Instagram,
-      Facebook, Snapchat), read through Android&rsquo;s Usage Access system, used to estimate
-      scroll distance.
-    </li>
-    <li>
-      <strong>Your device&rsquo;s screen dimensions</strong>, used together with usage time to
-      estimate distance.
-    </li>
-    <li>
-      <strong>The distances the App calculates</strong> (daily, weekly, monthly, yearly totals
-      and per-app breakdowns), stored locally so your history is available over time.
-    </li>
-  </ul>
-  <p>
-    All of the above is stored only in the App&rsquo;s private storage on your device. We do not
-    see it, collect it, or upload it.
-  </p>
-  <p class="note">
-    Scroll distance is an <em>estimate</em> based on time spent in an app, not a measurement of
-    actual scrolling. It is intended for personal awareness only.
-  </p>
+<h2>1. Who is responsible</h2>
+<p>Scrollength is made and published by an individual developer:</p>
+<ul>
+  <li><strong>Name:</strong> Dušan Tošić</li>
+  <li><strong>Email:</strong> <a href="mailto:scrollength.app@gmail.com">scrollength.app@gmail.com</a></li>
+</ul>
+<p>No screen time, distance or usage information ever reaches the developer.
+The only thing the developer can see is the record of a purchase, under a
+random identifier, as described in <a href="#purchases">Purchases</a>.</p>
 
-  <h2>3. Permissions</h2>
-  <p>
-    The App requests one sensitive permission:
-  </p>
-  <ul>
-    <li>
-      <strong>Usage Access</strong> &mdash; required by Android to read how long the tracked
-      apps are used, which is the basis for the distance estimate. Without it, the App cannot
-      function. This data is read and processed on the device only.
-    </li>
-  </ul>
+<h2>2. What the app reads</h2>
 
-  <h2>4. Local storage and device backup</h2>
-  <p>
-    Your data is kept in the App&rsquo;s local storage on your device. One exception to
-    &ldquo;on-device only&rdquo; is worth stating clearly:
-  </p>
-  <ul>
-    <li>
-      <strong>Android backup.</strong> If you have Android&rsquo;s built-in backup enabled, the
-      operating system may store an encrypted copy of the App&rsquo;s data in
-      <strong>your own Google account</strong> (Google Drive), so your history can be restored if
-      you reinstall the App or switch phones. This is a standard Android feature that you control
-      in your device settings. The backup belongs to you and your Google account &mdash; the
-      Developer has no access to it. It is governed by
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s
-      Privacy Policy</a>.
-    </li>
-  </ul>
+<h3>Usage time</h3>
+<p>With your permission (Android's <em>Usage Access</em>), Scrollength reads how
+long the following apps have been in the foreground on your device:</p>
+<ul>
+  <li>TikTok</li>
+  <li>Instagram</li>
+  <li>Facebook</li>
+  <li>Snapchat</li>
+  <li>Reddit</li>
+  <li>X</li>
+  <li>Pinterest</li>
+  <li>Threads</li>
+</ul>
+<p>The app reads only the amount of time, and only for these apps. It cannot
+see, and does not read, what you looked at, who you spoke to, what you typed,
+or anything inside those apps. It has no access to your messages, contacts,
+photos, location, camera or microphone.</p>
 
-  <h2>5. Subscriptions and payments</h2>
-  <p>
-    Scrollength offers an optional paid subscription (Scrollength Pro). If you choose to
-    subscribe:
-  </p>
-  <ul>
-    <li>
-      <strong>Google Play</strong> processes the payment. The App never sees or stores your
-      card details or payment information. Payment handling is governed by
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s
-      Privacy Policy</a>.
-    </li>
-    <li>
-      <strong>RevenueCat</strong> is used to manage your subscription status (for example, to
-      confirm whether your subscription is active so the App can unlock paid features). For this
-      purpose RevenueCat processes purchase-related identifiers and subscription information. See
-      the <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat
-      Privacy Policy</a>.
-    </li>
-  </ul>
-  <p>
-    Subscriptions renew automatically until cancelled. You can manage or cancel a subscription at
-    any time in your Google Play account.
-  </p>
-  <p class="note">
-    [This section applies once paid subscriptions go live. Confirm RevenueCat is the provider in
-    use and that both linked policy URLs are current at launch.]
-  </p>
+<h3>Your screen height</h3>
+<p>The app measures the height of your screen and asks you to confirm it during
+setup. This number is used to convert time into an estimated distance. It is a
+measurement of your phone, not of you.</p>
 
-  <h2>6. What we do not do</h2>
-  <ul>
-    <li>We do not operate any server or database that stores your data.</li>
-    <li>We do not require an account, a login, or your email address.</li>
-    <li>We do not sell, rent, or share your data with anyone.</li>
-    <li>We do not show advertising and we do not use advertising trackers.</li>
-    <li>We do not run analytics that identify you.</li>
-    <li>We do not track you across other apps or websites.</li>
-  </ul>
+<h3>App names and icons</h3>
+<p>To show which app a number belongs to, Scrollength asks Android for the name
+and icon of apps already installed on your device. These come from the system,
+are used only for display, and are never sent anywhere.</p>
 
-  <h2>7. Children&rsquo;s privacy</h2>
-  <p>
-    The App is not directed to children under the age of 13, and we do not knowingly process any
-    data from children under 13. Because the App collects no personal data on a server, it holds
-    no such data in any case.
-  </p>
+<h2>3. What the app stores</h2>
+<p>All of the following is kept in the app's private storage on your device:</p>
+<ul>
+  <li>A daily log of estimated distance, overall and per app</li>
+  <li>Today's running total</li>
+  <li>Your chosen unit (meters or feet) and your screen height</li>
+  <li>Your daily limit, if you set one, and the date you set it</li>
+  <li>Whether setup is complete, the date the app was last opened, and the date
+    it was installed</li>
+  <li>Whether you have Pro, and whether it came from a one-time purchase or a
+    subscription</li>
+</ul>
+<p>There is no name, email address or phone number in this list, and the app
+does not use an advertising ID.</p>
 
-  <h2>8. Data retention</h2>
-  <p>
-    Because your data lives on your device, it is retained for as long as the App is installed.
-    Uninstalling the App removes its local data from your device. Any copy held in your own
-    Android backup is controlled and removable through your Google account and device settings.
-  </p>
+<h2 id="network">4. What goes over the network</h2>
+<p>Your screen time, the distances, your history, the names of your apps and
+your screen height are <strong>never</strong> sent anywhere. They exist only on
+your phone.</p>
+<p>The app uses the network for one thing: checking whether you have bought
+Pro. It asks Google Play and RevenueCat (see <a href="#purchases">Purchases</a>)
+when you buy, when you restore a purchase, and when the app starts. Without a
+connection the app keeps working; only buying and restoring need one.</p>
+<p>A few buttons — this policy, the terms of service and subscription
+management — open your web browser. That is your browser making the request,
+not the app.</p>
 
-  <h2>9. Your rights</h2>
-  <p>
-    Under the GDPR and the Serbian Law on Personal Data Protection, you have rights including
-    access, rectification, erasure, restriction, and objection regarding personal data. Since the
-    Developer does not collect or hold your personal data on any server, there is generally no
-    personal data on our side to access, correct, or delete &mdash; your data is under your own
-    control on your device. For any question about these rights, contact us at the email above.
-  </p>
-  <p>
-    If you are in Serbia and believe your data protection rights have been violated, you may lodge
-    a complaint with the Commissioner for Information of Public Importance and Personal Data
-    Protection (Poverenik): <a href="https://www.poverenik.rs" target="_blank" rel="noopener">www.poverenik.rs</a>.
-    If you are in the EU/EEA, you may contact your local supervisory authority.
-  </p>
+<h2>5. Backups</h2>
+<p>Android offers its own backup service. If you have it switched on in your
+device settings, Android may copy the app's stored data into <strong>your own
+Google account</strong>, so it can be restored if you change phones. This is a
+feature of Android, not of Scrollength. The copy belongs to you, is covered by
+Google's terms, and the developer has no access to it.</p>
+<p>You can turn Android backup off in your device settings, usually under
+<em>System → Backup</em>.</p>
 
-  <h2>10. Governing law</h2>
-  <p>
-    This Privacy Policy is governed by the laws of the Republic of Serbia, including the Law on
-    Personal Data Protection (No. 87/2018), and, where applicable, the EU General Data Protection
-    Regulation (GDPR).
-  </p>
+<h2 id="purchases">6. Purchases</h2>
+<p>Scrollength offers an optional upgrade to Pro, either as a one-time purchase
+or as a monthly subscription. Payment is handled entirely by
+<strong>Google Play</strong>. The developer never sees or receives your card
+number, bank details or billing address.</p>
+<p>Google's handling of your payment information is covered by the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-  <h2>11. Changes to this policy</h2>
-  <p>
-    We may update this Privacy Policy from time to time, for example when features change. The
-    &ldquo;Last updated&rdquo; date at the top reflects the latest version. Significant changes
-    will be reflected here before they take effect.
-  </p>
+<!-- ───────────────────────────────────────────────────────────────────────
+     REVENUECAT: Delete this paragraph if you do not end up using RevenueCat,
+     and change section 4 to match. Leaving it in while not using it makes the
+     policy inaccurate.
+     ─────────────────────────────────────────────────────────────────────── -->
+<p>Purchases are confirmed through <strong>RevenueCat</strong>, a service that
+sits between the app and Google Play. RevenueCat receives a randomly generated
+identifier for your copy of the app, the history of what you bought and when,
+and the country and currency of your store. Like any service on the internet,
+it also receives the technical details that come with every connection, such as
+an IP address. The random identifier is not linked to your name or email, and
+none of your screen time or distances are ever sent to it. RevenueCat's
+handling of this information is covered by the
+<a href="https://www.revenuecat.com/privacy-policy">RevenueCat Privacy Policy</a>.</p>
+<!-- ─────────────────────────── END REVENUECAT ─────────────────────────── -->
 
-  <h2>12. Contact</h2>
-  <p>
-    Questions about this policy or your privacy? Email
-    <a href="mailto:scrollength.app@gmail.com">scrollength.app@gmail.com</a>.
-  </p>
+<h2>7. How long data is kept</h2>
+<p>Everything on your phone stays there until you remove it. You can clear it at
+any time by clearing the app's storage in your device settings, or by
+uninstalling the app, which deletes everything it stored.</p>
+<p>The record of a purchase is kept by Google Play and RevenueCat for as long as
+it is needed to give you access to what you bought, including restoring it on a
+new phone.</p>
 
-  <footer>
-    &copy; 2026 Scrollength. This document is provided for transparency and does not constitute
-    legal advice.
-  </footer>
+<h2>8. Your rights</h2>
+<p>Under the EU General Data Protection Regulation (GDPR) and the Serbian
+Personal Data Protection Act, you have rights of access, correction, erasure,
+restriction, objection and portability.</p>
+<p>Because almost everything stays on your device, most of these you can
+exercise directly, without asking anyone:</p>
+<ul>
+  <li><strong>Access and portability</strong> — Settings → Export my data writes
+    a CSV file of every day the app has recorded, which you can open in any
+    spreadsheet.</li>
+  <li><strong>Erasure</strong> — clear the app's storage, or uninstall it.</li>
+  <li><strong>Correction</strong> — your unit, screen height and daily limit can
+    all be changed in Settings.</li>
+</ul>
+<p>For your purchase record, write to the email above and the developer will
+have it deleted. Deleting it may mean a purchase can no longer be restored
+automatically.</p>
+<p>If you believe your rights have been infringed you may lodge a complaint with
+a supervisory authority. In Serbia this is the Commissioner for Information of
+Public Importance and Personal Data Protection. In the EU it is the data
+protection authority of the country you live in.</p>
+
+<h2>9. Children</h2>
+<p>Scrollength is not directed at children under 13, and the developer does not
+knowingly collect anything from them.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes, the date at the top of this page changes with it, and
+the updated version is published here. Material changes will also be noted in
+the app's store listing.</p>
+
+<h2>11. Contact</h2>
+<p>Questions about this policy:
+<a href="mailto:scrollength.app@gmail.com">scrollength.app@gmail.com</a></p>
+
+<footer>
+  Scrollength · <a href="./">Home</a> ·
+  <a href="./terms-of-service.html">Terms of Service</a>
+</footer>
 
 </div>
 </body>
