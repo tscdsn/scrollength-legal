@@ -71,7 +71,7 @@
   <h1>Privacy Policy</h1>
   <p class="lede">Scrollength works on your phone. Your screen time and the
   distances it calculates never leave it, and the developer cannot see them.</p>
-  <p class="meta">Last updated: 3 November 2026</p>
+  <p class="meta">Last updated: 11 November 2026</p>
 </header>
 
 <div class="card">
@@ -82,8 +82,10 @@
     <li>Everything is calculated and stored on your device, in the app's own
       private storage.</li>
     <li>There is no account and no advertising.</li>
-    <li>The only information that leaves your phone is the record of a
-      purchase, if you buy Pro. See
+    <li>Information leaves your phone only for Pro. When you open the Pro
+      screen, buy or restore a purchase, the app contacts RevenueCat with a
+      random identifier and your purchase record. If you never open the Pro
+      screen or restore a purchase, nothing is sent. See
       <a href="#network">What goes over the network</a>.</li>
     <li>Uninstalling the app deletes everything it stored on your phone.
       Copies that Android keeps in your own Google account are described under
@@ -98,10 +100,13 @@ responsible for the small amount of personal data described in this policy:</p>
   <li><strong>Name:</strong> Dušan Tošić</li>
   <li><strong>Based in:</strong> Serbia</li>
   <li><strong>Email:</strong> <a href="mailto:scrollength.app@gmail.com">scrollength.app@gmail.com</a></li>
+  <li><strong>Person in charge of the protection of personal information</strong>
+    (as Québec law requires): Dušan Tošić, at the email above</li>
 </ul>
 <p>No screen time, distance or usage information ever reaches the developer.
-The only thing the developer can see is the record of a purchase, under a
-random identifier, as described in <a href="#purchases">Purchases</a>.</p>
+The developer can see only the record of a purchase, under a random
+identifier, as described in <a href="#purchases">Purchases</a>, and any email
+you choose to send.</p>
 
 <h2>2. What the app reads</h2>
 
@@ -156,11 +161,16 @@ does not use an advertising ID.</p>
 <p>Your screen time, the distances, your history, the names of your apps and
 your screen height are <strong>never</strong> sent anywhere. They exist only on
 your phone.</p>
-<p>The app uses the network for one thing: Pro. It contacts Google Play and
-RevenueCat (see <a href="#purchases">Purchases</a>) when the app starts or comes
-back to the screen, when you open the Pro screen to see prices, when you buy,
-and when you restore a purchase. Without a connection the app keeps working;
-only buying and restoring need one.</p>
+<p>The app uses the network for one thing: Pro. The purchase component
+(RevenueCat, see <a href="#purchases">Purchases</a>) is started only when you
+open the Pro screen to see prices, when you buy, when you restore a purchase,
+or, if you already have Pro, when the app starts, to check that your purchase
+is still valid. Once started, it can also check your purchase when you come
+back to the app, until the app is closed. If you never open the Pro screen,
+never buy and never restore a purchase, the app does not contact RevenueCat or
+Google Play billing at all.
+Without a connection the app keeps working; only buying and restoring need
+one.</p>
 <p>A few buttons — this policy, the terms of service and subscription
 management — open your web browser. That is your browser making the request,
 not the app.</p>
@@ -201,21 +211,51 @@ statistics, such as how many people bought Pro and when. This is the only
 analytics Scrollength uses. Nothing about how you use the app is sent to the
 developer or to RevenueCat.</p>
 <p>RevenueCat, Inc. is based in the United States and processes this
-information there. Transfers from Europe rely on the standard contractual
-clauses that RevenueCat provides in its data processing terms. RevenueCat's own
-handling of this information is covered by the
+information there, under its
+<a href="https://www.revenuecat.com/dpa">data processing terms</a> with the
+developer. Information held in the United States can be accessed by courts,
+law enforcement and national security authorities there, under U.S. law.
+RevenueCat's own handling of this information is covered by the
 <a href="https://www.revenuecat.com/privacy-policy">RevenueCat Privacy Policy</a>.</p>
 
-<h2>7. Legal basis</h2>
-<p>The only personal data the developer handles is the purchase record
-described above. Under the EU General Data Protection Regulation (GDPR) and the
-Serbian Personal Data Protection Act, it is handled on these grounds:</p>
+<h3 id="transfers">Transfer to the United States</h3>
 <ul>
-  <li><strong>Confirming and restoring a purchase</strong> is necessary to give
-    you what you paid for (performance of a contract, GDPR Article 6(1)(b)).</li>
+  <li><strong>From Serbia.</strong> RevenueCat is not certified under the
+    EU–U.S. Data Privacy Framework, so under Serbian law this transfer does not
+    go to a recipient with an adequate level of protection. It is made because
+    it is necessary to perform the contract with you, or to take steps you ask
+    for before entering into it: showing you the prices when you open the Pro
+    screen, completing a purchase, restoring it, and confirming that Pro is
+    still active (Personal Data Protection Act, Article 69(1)(2)). This is why
+    RevenueCat is started only in those situations.</li>
+  <li><strong>From Québec.</strong> The purchase record described above is
+    communicated outside Québec, to RevenueCat in the United States. The
+    developer assessed this transfer before making it, as Québec law
+    requires.</li>
+  <li><strong>From the European Economic Area or the United Kingdom.</strong>
+    Transfers rely on the standard contractual clauses in RevenueCat's data
+    processing terms.</li>
+</ul>
+
+<h2>7. Legal basis</h2>
+<p>The developer handles two kinds of personal data: the purchase record
+described above, and emails you choose to send. Under the EU General Data
+Protection Regulation (GDPR) and the Serbian Personal Data Protection Act, they
+are handled on these grounds:</p>
+<ul>
+  <li><strong>Showing prices, confirming and restoring a purchase</strong> is
+    necessary to take the steps you ask for before buying, and to give you what
+    you paid for (contract, GDPR Article 6(1)(b)).</li>
   <li><strong>Purchase statistics</strong> rely on the developer's legitimate
     interest in knowing how Pro sells (GDPR Article 6(1)(f)). You can object at
     any time by writing to the email above.</li>
+  <li><strong>Emails</strong> you send are used only to reply and to handle your
+    request. This relies on the developer's legitimate interest in answering you
+    (GDPR Article 6(1)(f)) and, when you exercise your rights under this policy,
+    on the legal obligation to respond (GDPR Article 6(1)(c)). Emails arrive in a
+    Gmail account, so Google stores them as the email provider, possibly on
+    servers outside Europe, under the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
 </ul>
 <p>Your screen time is not handled by the developer at all. It is calculated
 and kept only on your phone. Scrollength makes no automated decisions about you
@@ -228,6 +268,8 @@ uninstalling the app, which deletes everything it stored on the phone.</p>
 <p>The record of a purchase is kept by Google Play and RevenueCat for as long as
 it is needed to give you access to what you bought, including restoring it on a
 new phone, or until you ask for it to be deleted.</p>
+<p>Emails are kept for as long as they are needed to answer you and handle your
+request, and are then deleted.</p>
 
 <h2>9. Your rights</h2>
 <p>Under the GDPR and the Serbian Personal Data Protection Act, you have rights
@@ -249,7 +291,11 @@ restored automatically.</p>
 <p>If you believe your rights have been infringed you may lodge a complaint with
 a supervisory authority. In Serbia this is the Commissioner for Information of
 Public Importance and Personal Data Protection. In the EU it is the data
-protection authority of the country you live in.</p>
+protection authority of the country you live in. Elsewhere you can contact your
+local privacy regulator, for example the Office of the Privacy Commissioner of
+Canada, the Commission d'accès à l'information in Québec, the Office of the
+Australian Information Commissioner or the New Zealand Privacy
+Commissioner.</p>
 
 <h2>10. Children</h2>
 <p>Scrollength is not directed at children under 13, and the developer does not
